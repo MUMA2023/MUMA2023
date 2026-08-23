@@ -41,7 +41,7 @@
     .nav-links a::after { content: ""; position: absolute; right: 0; bottom: -8px; left: 0; height: 3px; background: var(--pink); transform: scaleX(0); transform-origin: right; transition: transform .25s var(--ease); }
     .nav-links a:hover::after { transform: scaleX(1); transform-origin: left; }
     .hero { position: relative; min-height: 100svh; display: grid; grid-template-columns: minmax(380px, .82fr) minmax(0, 1.18fr); background: var(--paper); isolation: isolate; }
-    .hero-copy { position: relative; z-index: 3; display: flex; flex-direction: column; justify-content: flex-end; padding: 132px max(34px, calc((100vw - var(--max)) / 2)) 60px max(24px, calc((100vw - var(--max)) / 2)); background: var(--yellow); }
+    .hero-copy { position: relative; z-index: 3; display: flex; flex-direction: column; justify-content: flex-end; padding: 132px clamp(34px, 4vw, 96px) 60px; background: var(--yellow); }
     .hero-copy::after { content: ""; position: absolute; z-index: -1; top: 0; right: -56px; width: 58px; height: 100%; background: var(--yellow); clip-path: polygon(0 0, 100% 4%, 42% 11%, 100% 18%, 35% 25%, 90% 34%, 32% 42%, 100% 50%, 38% 59%, 92% 67%, 30% 76%, 100% 84%, 42% 92%, 100% 100%, 0 100%); }
     .hero-name { position: relative; width: max-content; margin: 0; font-family: var(--display); font-size: clamp(5.4rem, 10vw, 8.8rem); font-weight: 900; line-height: .8; letter-spacing: -.035em; }
     .hero-name::before, .hero-name::after { content: attr(data-text); position: absolute; inset: 0; pointer-events: none; mix-blend-mode: multiply; }
